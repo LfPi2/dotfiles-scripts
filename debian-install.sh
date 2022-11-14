@@ -31,7 +31,7 @@ cd ~
 
 echo "setxkbmap pt" >> .xinitrc
 echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png" >> .xinitrc
-echo "exec dwm" >> .xinitrc
+echo "exec dbus-launch --exit-width-x11 dwm" >> .xinitrc
 
 echo "startx" >> .bash_profile
 
