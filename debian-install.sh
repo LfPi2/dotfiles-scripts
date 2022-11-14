@@ -7,6 +7,7 @@ fi
 
 cd ~
 
+sudo apt-get update
 sudo apt-get install git gcc make man-db
 sudo apt-get install xorg pulseaudio
 sudo apt-get install libx11-dev libxft-dev libxinerama-dev dbus-x11
