@@ -7,11 +7,11 @@ fi
 
 cd ~
 
-sudo apt-get update
-sudo apt-get install git gcc make man-db
-sudo apt-get install xorg pulseaudio
-sudo apt-get install libx11-dev libxft-dev libxinerama-dev dbus-x11
-sudo apt-get install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs curl
+sudo apt-get -y update
+sudo apt-get -y install git gcc make man-db
+sudo apt-get -y install xorg pulseaudio
+sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
+sudo apt-get -y install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs curl
 
 xdg-user-dirs-update
 
