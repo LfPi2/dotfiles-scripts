@@ -10,7 +10,7 @@ cd ~
 sudo apt-get install git gcc make man-db
 sudo apt-get install xorg pulseaudio
 sudo apt-get install libx11-dev libxft-dev libxinerama-dev
-sudo apt-get install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs
+sudo apt-get install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs curl
 
 xdg-user-dirs-update
 
