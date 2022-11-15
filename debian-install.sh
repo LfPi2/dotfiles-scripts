@@ -20,11 +20,15 @@ cd ~/repos
 
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/dmenu
+git clone https://github.com/torrinfail/dwmblocks
 
 cd dwm
 make
 sudo make clean install
 cd ../dmenu
+make
+sudo make clean install
+cd ../dwmblocks
 make
 sudo make clean install
 
