@@ -30,10 +30,9 @@ sudo make clean install
 
 cd ~
 
-echo "setxkbmap pt" >> .xinitrc
-echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png" >> .xinitrc
+echo "setxkbmap pt &" >> .xinitrc
+echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png &" >> .xinitrc
+echo "dwmblocks &" >> .xinitrc
 echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
-
-echo "startx" >> .bash_profile
 
 sudo shutdown -h now
