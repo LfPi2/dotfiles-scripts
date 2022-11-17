@@ -18,9 +18,9 @@ xdg-user-dirs-update
 mkdir ~/repos
 cd ~/repos
 
-git clone https://git.suckless.org/dwm
+git clone https://github.com/LfPi2/dwm
 git clone https://git.suckless.org/dmenu
-git clone https://github.com/torrinfail/dwmblocks
+git clone https://github.com/LfPi2/dwmblocks
 
 cd dwm
 make
