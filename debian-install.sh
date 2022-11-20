@@ -19,7 +19,7 @@ mkdir ~/repos
 cd ~/repos
 
 git clone https://github.com/LfPi2/dwm
-git clone https://git.suckless.org/dmenu
+git clone https://github.com/LfPi2/dmenu
 git clone https://github.com/LfPi2/dwmblocks
 
 cd dwm
