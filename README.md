@@ -1,6 +1,6 @@
 # dotfiles-scripts
 
-## Other than dotfiles
+## Other than dotfiles and scripts
 ### Wallpapers
 - https://wall.alphacoders.com/big.php?i=1072283
 	- https://initiate.alphacoders.com/images/107/cropped-1920-1080-1072283.png?8415

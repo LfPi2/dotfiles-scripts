@@ -15,3 +15,5 @@ alias apt-ar='sudo apt-get autoremove'
 alias rm='rm -i'
 
 echo "$(date)"
+
+eval "$(starship init bash)"
