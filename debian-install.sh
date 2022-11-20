@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y install git gcc make man-db
 sudo apt-get -y install xorg pulseaudio
 sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
-sudo apt-get -y install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh htop mpv kitty
+sudo apt-get -y install neofetch firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh htop mpv kitty acpi
 
 xdg-user-dirs-update
 
