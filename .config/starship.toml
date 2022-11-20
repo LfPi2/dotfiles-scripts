@@ -1,0 +1,16 @@
+add_newline = false
+
+format = "[$username@$hostname](bg:#2e3440)[](fg:#2e3440 bg:#3b4252)[$directory](bg:#3b4252)[](fg:#3b4252) "
+
+[username]
+format = "$user"
+show_always = true
+
+[hostname]
+format = "$hostname"
+ssh_only = false
+
+[directory]
+format = "$path"
+truncation_length = 0
+truncate_to_repo = false
