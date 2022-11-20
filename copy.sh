@@ -5,5 +5,5 @@ if [ $(id -u) = "0" ]; then
 	exit
 fi
 
-cp copy.sh ~
+cp .bashrc ~
 cp -r .config ~
