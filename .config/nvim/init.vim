@@ -34,6 +34,8 @@ endif
 call plug#begin()
 	Plug 'preservim/nerdtree' " https://github.com/preservim/nerdtree
 	Plug 'vim-airline/vim-airline' " https://github.com/vim-airline/vim-airline
+	Plug 'vim-airline/vim-airline-themes' " https://github.com/vim-airline/vim-airline-themes
+	Plug 'arcticicestudio/nord-vim' " https://github.com/arcticicestudio/nord-vim
 call plug#end()
 
 " https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
@@ -51,3 +53,5 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+colorscheme nord
