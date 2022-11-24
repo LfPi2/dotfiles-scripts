@@ -1,6 +1,6 @@
 add_newline = false
 
-format = "[$username@$hostname](bg:#2e3440)[](fg:#2e3440 bg:#3b4252)[$directory](bg:#3b4252)[](fg:#3b4252) "
+format = "[$username@$hostname](fg:#eceff4 bg:#88c0d0)[](fg:#88c0d0 bg:#81a1c1)[$directory](fg:#eceff4 bg:#81a1c1)[](fg:#81a1c1) "
 
 [username]
 format = "$user"
