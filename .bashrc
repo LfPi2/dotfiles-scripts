@@ -1,6 +1,7 @@
 # https://gitlab.com/dwt1/dotfiles
 
 export EDITOR='nvim'
+export PATH="/var/lib/flatpak/exports/bin/:$PATH"
 
 [[ $- != *i* ]] && return
 

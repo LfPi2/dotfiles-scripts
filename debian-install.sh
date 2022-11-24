@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y install git gcc make man-db
 sudo apt-get -y install xorg pulseaudio
 sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
-sudo apt-get -y install firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh mpv kitty acpi unzip
+sudo apt-get -y install firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh mpv kitty acpi unzip flatpak
 sudo apt-get -y install neofetch htop cowsay cmatrix cbonsai lolcat cava
 
 xdg-user-dirs-update
@@ -40,4 +40,6 @@ echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png &" >> .xinitrc
 echo "dwmblocks &" >> .xinitrc
 echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
-sudo shutdown -h now
+sudo remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+sudo reboot
