@@ -50,14 +50,9 @@ echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
 sudo remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-cd Downloads
-
-curl -sS https://starship.rs/install.sh | sudo sh -y
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Monoid.zip
-sudo unzip Monoid.zip -d /usr/share/fonts
-wget -O wallpaper.png https://initiate.alphacoders.com/images/107/cropped-1920-1080-1072283.png?9377
-cp wallpaper.png ../Picutres
-
 cd $repoPath
+
+cp wallpaper.png ~/Pictures
+sudo unzip font.zip -d /usr/share/fonts
 
 ./copy.sh

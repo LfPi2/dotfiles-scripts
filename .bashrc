@@ -17,6 +17,7 @@ alias ls='ls -al --color=always'
 alias apt-up='sudo apt-get update && sudo apt-get upgrade'
 alias apt-ar='sudo apt-get autoremove'
 alias rm='rm -i'
+alias icat='kitty +kitten icat'
 
 echo "$(date)"
 
