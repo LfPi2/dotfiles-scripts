@@ -37,6 +37,7 @@ call plug#begin()
 	Plug 'vim-airline/vim-airline-themes' " https://github.com/vim-airline/vim-airline-themes
 	Plug 'arcticicestudio/nord-vim' " https://github.com/arcticicestudio/nord-vim
 	Plug 'ryanoasis/vim-devicons' " https://github.com/ryanoasis/vim-devicons
+	Plug 'neoclide/coc.nvim' " https://github.com/neoclide/coc.nvim
 call plug#end()
 
 " https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
@@ -56,3 +57,6 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 colorscheme nord
+
+" Install missing coc.nvim extensions
+let g:coc_global_extensions = []

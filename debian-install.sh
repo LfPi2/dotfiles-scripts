@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y install git gcc make man-db
 sudo apt-get -y install xorg pulseaudio
 sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
-sudo apt-get -y install firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh mpv kitty acpi unzip flatpak picom
+sudo apt-get -y install firefox-esr thunar neovim pavucontrol xdg-user-dirs curl feh mpv kitty acpi flatpak picom node npm unzip wget
 sudo apt-get -y install neofetch htop cowsay cmatrix cbonsai lolcat cava
 
 xdg-user-dirs-update
@@ -22,6 +22,7 @@ cd ~/repos
 git clone https://github.com/LfPi2/dwm
 git clone https://github.com/LfPi2/dmenu
 git clone https://github.com/LfPi2/dwmblocks
+git clone https://github.com/EliverLara/Nordic
 
 cd dwm
 make
@@ -32,6 +33,8 @@ sudo make clean install
 cd ../dwmblocks
 make
 sudo make clean install
+cd ..
+sudo cp -r Nordic /usr/share/themes
 
 cd ~
 
@@ -42,5 +45,15 @@ echo "dwmblocks &" >> .xinitrc
 echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
 sudo remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+cd Downloads
+
+curl -sS https://starship.rs/install.sh | sudo sh -y
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Monoid.zip
+sudo unzip Monoid.zip -d /usr/share/fonts
+wget -O wallpaper.png https://initiate.alphacoders.com/images/107/cropped-1920-1080-1072283.png?9377
+cp wallpaper.png ../Picutres
+
+cd ~
 
 sudo reboot
