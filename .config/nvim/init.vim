@@ -14,6 +14,7 @@ syntax on
 set nowrap
 
 set number
+set cursorline
 
 set hlsearch
 set ignorecase
