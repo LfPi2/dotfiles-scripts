@@ -14,7 +14,7 @@ sudo apt-get -y install git gcc make man-db unzip curl wget
 sudo apt-get -y install xorg pulseaudio
 sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
 sudo apt-get -y install xdg-user-dirs feh acpi picom htop
-sudo apt-get -y install neovim kitty node npm flatpak
+sudo apt-get -y install neovim kitty nodejs npm flatpak
 sudo apt-get -y install firefox-esr thunar pavucontrol mpv
 sudo apt-get -y install neofetch cowsay cmatrix cbonsai lolcat cava
 
@@ -52,6 +52,7 @@ sudo remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpak
 
 cd $repoPath
 
+curl -sS https://starship.rs/install.sh | sudo sh -y
 cp wallpaper.png ~/Pictures
 sudo unzip font.zip -d /usr/share/fonts
 
