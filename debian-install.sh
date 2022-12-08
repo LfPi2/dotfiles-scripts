@@ -13,7 +13,7 @@ sudo apt-get -y update
 sudo apt-get -y install git gcc make man-db unzip curl wget
 sudo apt-get -y install xorg pulseaudio
 sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
-sudo apt-get -y install xdg-user-dirs feh acpi picom htop
+sudo apt-get -y install xdg-user-dirs feh acpi picom htop ssh
 sudo apt-get -y install neovim kitty nodejs npm flatpak
 sudo apt-get -y install firefox-esr thunar pavucontrol mpv
 sudo apt-get -y install neofetch cowsay cmatrix cbonsai lolcat cava
@@ -48,11 +48,11 @@ echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png &" >> .xinitrc
 echo "dwmblocks &" >> .xinitrc
 echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
-sudo remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 cd $repoPath
 
-curl -sS https://starship.rs/install.sh | sudo sh -y
+curl -sS https://starship.rs/install.sh | sh
 cp wallpaper.png ~/Pictures
 sudo unzip font.zip -d /usr/share/fonts
 
