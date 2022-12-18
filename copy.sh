@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ $(id -u) = "0" ]; then
 	echo "You should not run the script as root"
