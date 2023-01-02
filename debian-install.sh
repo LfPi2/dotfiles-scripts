@@ -53,7 +53,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 cd $repoPath
 
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sudo sh
 cp wallpaper.png ~/Pictures
 sudo unzip font.zip -d /usr/share/fonts
 
