@@ -49,6 +49,7 @@ echo "dwmblocks &" >> .xinitrc
 echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 cd $repoPath
 
