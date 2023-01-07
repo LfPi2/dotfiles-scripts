@@ -59,5 +59,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 colorscheme nord
 
+let g:airline_powerline_fonts = 1
+
 " Install missing coc.nvim extensions
 let g:coc_global_extensions = []

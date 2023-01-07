@@ -16,7 +16,7 @@ sudo apt-get -y install libx11-dev libxft-dev libxinerama-dev dbus-x11
 sudo apt-get -y install xdg-user-dirs feh acpi picom htop ssh
 sudo apt-get -y install neovim kitty nodejs npm flatpak
 sudo apt-get -y install firefox-esr thunar pavucontrol mpv
-sudo apt-get -y install neofetch cowsay cmatrix cbonsai lolcat cava
+sudo apt-get -y install neofetch cowsay cmatrix cbonsai lolcat cava bat
 
 xdg-user-dirs-update
 
