@@ -19,6 +19,7 @@ sudo apt-get -y install firefox-esr thunar pavucontrol mpv
 sudo apt-get -y install neofetch cowsay cmatrix cbonsai lolcat cava bat
 
 xdg-user-dirs-update
+mkdir ~/code
 
 mkdir ~/repos
 cd ~/repos
@@ -39,14 +40,6 @@ make
 sudo make clean install
 cd ..
 sudo cp -r Nordic /usr/share/themes
-
-cd ~
-
-echo "setxkbmap pt &" >> .xinitrc
-echo "picom &" >> .xinitrc
-echo "feh --bg-scale /home/$USER/Pictures/wallpaper.png &" >> .xinitrc
-echo "dwmblocks &" >> .xinitrc
-echo "exec dbus-launch --exit-with-x11 dwm" >> .xinitrc
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash

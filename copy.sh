@@ -5,5 +5,6 @@ if [ $(id -u) = "0" ]; then
 	exit
 fi
 
+cp .xinitrc ~
 cp .bashrc ~
 cp -r .config ~
