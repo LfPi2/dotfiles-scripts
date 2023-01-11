@@ -48,6 +48,6 @@ cd $repoPath
 
 curl -sS https://starship.rs/install.sh | sudo sh
 cp wallpaper.png ~/Pictures
-sudo unzip font.zip -d /usr/share/fonts
+sudo unzip font-monoid.zip -d /usr/share/fonts
 
 ./copy.sh
