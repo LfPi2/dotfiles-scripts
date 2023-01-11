@@ -7,4 +7,5 @@ fi
 
 cp .xinitrc ~
 cp .bashrc ~
+cp .gitconfig ~
 cp -r .config ~
